@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+}
+body {
+    background: url('https://images6.alphacoders.com/886/886166.jpg') no-repeat fixed;
+    font-family: 'Dosis', sans-serif;
+}
+.myforms {
+    width: 500px;
+    margin:150px auto;
+    background: #fff;
+    position: relative;
+    padding:100px 50px 50px;
+}
+img {
+    width: 300px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+div {
+    margin-bottom:25px;
+}
+label {
+    display: block;
+    margin-bottom:5px;
+}
+input, textarea, select {
+    outline:none;
+    border:1px solid lightgray;
+    padding:10px;
+    border-radius:3px;
+    width: 100%;
+    transition:.3s all ease-in-out;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+.non-block {
+    display: inline;
+}
+#homme, #femme, #autre, # {
+    width: auto;
+}
+textarea {
+    height: 150px;
+    resize:vertical;
+}
+input:focus, textarea:focus {
+    border:1px solid crimson;
+}
+input[type="submit"], input[type="reset"] {
+    cursor:pointer;
+}

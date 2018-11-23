@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Les formulaires</title>
+        <meta charset="UTF-8">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="myforms">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/f/f3/Hearthstone_%282016%29_Logo.png" alt="">
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Informations générales</legend>
+                    <div>
+                        <label for="name">Nom d'utilisateur</label>
+                        <input type="text" name="name" id="name" required autofocus maxlength="3" autocomplete="name" placeholder="Ex: Céréssia">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Ex: hello@olivier-ceressia.be">
+                    </div>
+                    <div>
+                        <label for="mdp">Password</label>
+                        <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="search">Search</label>
+                    <input type="search" name="search" id="search" placeholder="Que désirez-vous rechercher ?">
+                </div>
+                <div>
+                    <label for="tel">Telephone</label>
+                    <input type="tel" name="tel" id="tel" value="+32">
+                </div>
+                <div>
+                    <label for="url">URL de votre site web</label>
+                    <input type="url" name="url" id="url" placeholder="Ex : http://www.olivier-ceressia.be">
+                </div>
+                <div>
+                    <div>Votre sexe</div>
+                    <input type="radio" id="homme" name="sexe">
+                    <label for="homme" class="non-block">Masculin</label><br>
+                    <input type="radio" id="femme" name="sexe">
+                    <label for="femme" class="non-block">Féminin</label><br>
+                    <input type="radio" id="autre" name="sexe">
+                    <label for="autre" class="non-block">Autre</label>
+                </div>
+                <div>
+                    <div>Vous aimez :</div>
+                    <input type="checkbox" id="vegetable" name="miam">
+                    <label for="vegetable">Les légumes</label><br>
+                    <input type="checkbox" id="meat" name="miam">
+                    <label for="meat">La viande</label><br>
+                    <input type="checkbox" id="kids" name="miam">
+                    <label for="kids">Les enfants</label>
+                </div>
+                <div>
+                    <label for="country">Votre pays</label>
+                    <select id="country" name="country">
+                        <optgroup label="Europe">
+                            <option value="be">Belgique</option>
+                            <option value="fr" selected>France</option>
+                            <option value="pt">Portugal</option>
+                        </optgroup>
+                        <optgroup label="Afrique">
+                            <option value="ni">Nigéria</option>
+                            <option value="as">Afrique du Sud</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Votre message</label>
+                    <textarea id="msg" name="msg" placeholder="Votre petit message d'amour ♥"></textarea>
+                </div>
+                <div>
+                    <label for="color">Choisissez votre couleur</label>
+                    <input type="color" name="color" id="color">
+                </div>
+                <div>
+                    <label for="date">Choisissez une date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="file">Envoyer un fichier</label>
+                    <input type="file" name="file" id="file">
+                </div>
+                <div>
+                    <input type="submit" name="envoyer" id="envoyer" value="Envoyay">
+                </div>
+                <div>
+                    <input type="reset" name="reset" id="reset" value="Effacay">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
